@@ -1,5 +1,5 @@
 package pegadadecarbono;
 
 public interface CarbonFootprint {
-    double getCarbonFootprint();
+	double getCarbonFootprint();
 }
