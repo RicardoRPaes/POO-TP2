@@ -1,5 +1,14 @@
 package pegadadecarbono;
 
+/**
+ * Classe responsável por calcular o valor de carbono liberado por determinados
+ * carros setados pelo usuário
+ *
+ * @version 0.9.0
+ * @author Ricardo Paes
+ * @author Thiago Alves
+ */
+
 public class Car implements CarbonFootprint {
 
 	private double MediaKmAnuais;
@@ -15,10 +24,17 @@ public class Car implements CarbonFootprint {
 		return MediaKmAnuais;
 	}
 
+	/**
+	 * @param media
+	 *            de MPG do carro (double)
+	 */
 	public void setMediaKmAnuais(double MediaKmAnuais) {
 		this.MediaKmAnuais = MediaKmAnuais;
 	}
 
+	/**
+	 * @return media de MPG do carro (double)
+	 */
 	public double getMediaMPG() {
 		return MediaMPG;
 	}
@@ -29,7 +45,7 @@ public class Car implements CarbonFootprint {
 
 	@Override
 	public String toString() {
-		return "Car{" + "Media Km Anuais = " + MediaKmAnuais + ", Media MPG = " + MediaMPG + '}';
+		return "Car (" + "Media Km Anuais = " + MediaKmAnuais + ", Media MPG = " + MediaMPG + ')';
 	}
 
 	@Override

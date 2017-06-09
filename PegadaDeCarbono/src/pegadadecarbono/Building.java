@@ -1,5 +1,14 @@
 package pegadadecarbono;
 
+/**
+ * Classe responsável por calcular o valor de carbono liberaos por determinados
+ * edificios setados pelo usuário
+ *
+ * @version 0.9.0
+ * @author Ricardo Paes
+ * @author Thiago Alves
+ */
+
 public class Building implements CarbonFootprint {
 
 	private double MediaMensalKwh;
@@ -24,7 +33,7 @@ public class Building implements CarbonFootprint {
 
 	@Override
 	public String toString() {
-		return "Building{" + "MediaMensalKwh = " + MediaMensalKwh + '}';
+		return "Building (" + "MediaMensalKwh = " + MediaMensalKwh + ')';
 	}
 
 }

@@ -1,5 +1,14 @@
 package pegadadecarbono;
 
+/**
+ * Classe responsável por calcular o valor de carbono liberado por determinadas
+ * bicicletas setadas pelo usuário
+ *
+ * @version 0.9.0
+ * @author Ricardo Paes
+ * @author Thiago Alves
+ */
+
 public class Bicycle implements CarbonFootprint {
 
 	private double KmAnuais;
@@ -20,7 +29,7 @@ public class Bicycle implements CarbonFootprint {
 
 	@Override
 	public String toString() {
-		return "Bicycle{" + "KmAnuais = " + KmAnuais + '}';
+		return "Bicycle (" + "KmAnuais = " + KmAnuais + ')';
 	}
 
 	@Override
